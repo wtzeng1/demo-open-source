@@ -29,7 +29,9 @@ export default defineConfig({
   targets: {
     ie: 11,
   },
-  history: 'hash',
+  history: {
+    type: 'hash'
+  },
   // umi routes: https://umijs.org/docs/routing
   routes: [
     {
