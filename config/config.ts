@@ -6,7 +6,7 @@ import proxy from './proxy';
 const { REACT_APP_ENV } = process.env;
 
 export default defineConfig({
-  hash: false,
+  hash: true,
   antd: {},
   dva: {
     hmr: true,
@@ -29,6 +29,7 @@ export default defineConfig({
   targets: {
     ie: 11,
   },
+  history: 'hash',
   // umi routes: https://umijs.org/docs/routing
   routes: [
     {
